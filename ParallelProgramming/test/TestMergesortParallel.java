@@ -15,7 +15,7 @@ public class TestMergesortParallel{
         int[] left = {0,1,3,6,7};
         MergesortParallel main = new MergesortParallel(new int[10]);
         main.setBranches(left, right);
-        main.Merge();
+        main.Merge(main.getArr(), main.getLeft(), main.getRight());
         for (int i = 0; i < main.getArr().length; i++) {
             if(main.getArr()[i]!=sorted[i]){
                 assertTrue(false);
@@ -31,7 +31,7 @@ public class TestMergesortParallel{
         int[] left = {0,1,3,6,7};
         MergesortParallel main = new MergesortParallel(new int[9]);
         main.setBranches(left, right);
-        main.Merge();
+        main.Merge(main.getArr(), main.getLeft(), main.getRight());
         for (int i = 0; i < main.getArr().length; i++) {
             if(main.getArr()[i]!=sorted[i]){
                 assertTrue(false);
@@ -39,7 +39,7 @@ public class TestMergesortParallel{
         }
         assertTrue(true);
     }
-//    @Test
+    @Test
     public void testMergeSeq(){
         //test if the mergesort works sequentially
         int[] sorted = {1,2,3,4,5,6,7,8,9};

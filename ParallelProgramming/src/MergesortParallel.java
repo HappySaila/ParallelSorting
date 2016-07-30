@@ -3,30 +3,31 @@ public class MergesortParallel{
         System.out.println("Hello Mergesort class");
     }
 
+
+
     //region initialisation
-    int[] left;
-    int[] right;
-    int[] arr;
-    int i;
-    int j;
-    int k;
+    private int[] left;
+    private int[] right;
+    private int[] arr;
+
     //endregion
 
     //region constructors
     public MergesortParallel(int[] main){
         this.arr = main;
-        i=0;
-        j=0;
-        k=0;
     }
     public MergesortParallel(){
-        i=0;
-        j=0;
-        k=0;
     }
     //endregion
 
     //region GetSet
+    public int[] getLeft() {
+        return left;
+    }
+
+    public int[] getRight() {
+        return right;
+    }
     public void setBranches(int[] left, int[] right){
         this.left = left;
         this.right = right;
@@ -40,9 +41,12 @@ public class MergesortParallel{
     //endregion
 
     //region methods
-    public void Merge(){
+    public static void Merge(int arr[], int[] left, int[] right){
         //will Merge this objects left array with this objects right array.
         //the resulting array will be saved in arr.
+        int i=0;
+        int j=0;
+        int k=0;
         while (i<left.length && j<right.length){
             if (left[i]<=right[j]){
                 arr[k]=left[i];
@@ -71,18 +75,18 @@ public class MergesortParallel{
             return;
         }
         int mid = n/2;
-        left = new int[n/2];
-        right = new int[n-n/2]; //for odd numbered arrays as well
+        int[] left = new int[n/2];
+        int[] right = new int[n-n/2]; //for odd numbered arrays as well
         //splitting main array into right and left arrays
-        for (int l = 0; l < mid-1; l++) {
+        for (int l = 0; l < mid; l++) {
             left[l]=arr[l];
         }
-        for (int l = mid; l < n-1; l++) {
-            right[l]=arr[l];
+        for (int l = mid; l < n; l++) {
+            right[l-mid]=arr[l];
         }
         MergesortSeq(left);
         MergesortSeq(right);
-        Merge();
+        Merge(arr,left,right);
     }
     public void MergesortParallel(){
 
