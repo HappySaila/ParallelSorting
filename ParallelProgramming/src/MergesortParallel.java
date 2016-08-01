@@ -15,9 +15,9 @@ public class MergesortParallel extends java.lang.Thread{
     public MergesortParallel(int[] main){
         this.arr = main;
     }
-    public MergesortParallel(int[] main, int sc){
+    public MergesortParallel(int[] main, int threads){
         this.arr = main;
-        this.sequencialCutoff =sc;
+        this.sequencialCutoff =main.length/threads;
     }
     public MergesortParallel(){
     }

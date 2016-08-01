@@ -4,7 +4,7 @@ public class QuicksortParallel extends java.lang.Thread{
     }
     //region instantiate
     private int[] arr;
-    private int sequentialCutoff;
+    private int sequentialCutoff=2;
     private int start;
     private int end;
     //endregion
@@ -13,13 +13,17 @@ public class QuicksortParallel extends java.lang.Thread{
     public QuicksortParallel(int[] arr) {
         this.arr = arr;
     }
-    public QuicksortParallel(int[] arr, int sc) {
+    public QuicksortParallel(int[] arr, int threads) {
         this.arr = arr;
-        this.sequentialCutoff =sc;
+        this.sequentialCutoff =arr.length/threads;
     }
-    public QuicksortParallel(int[] arr, int sequentialCutoff, int start,  int end) {
+    public QuicksortParallel(int[] arr, int threads, int start,  int end) {
         this.start = start;
-        this.sequentialCutoff = sequentialCutoff;
+        try{
+            this.sequentialCutoff = arr.length/threads;
+        }catch(ArithmeticException e){
+            sequentialCutoff = 2;
+        }
         this.end = end;
         this.arr = arr;
     }

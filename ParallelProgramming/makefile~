@@ -52,5 +52,5 @@ clean:
 	@rm -Rf doc
 	@echo "all is clean-"
 run: clean all
-	java -cp $(BINDIR) DriverSort 
+	java -cp $(BINDIR) DriverSort sortType arrayMin arrayMax arrayInc outName
 
