@@ -8,7 +8,7 @@ public class Record {
     //region instantiate
     private int arraySize;
     private int optimalThread;
-    private int bestTime;
+    private float bestTime;
     private float speedUp;
     private formatter x;
     //endregion
@@ -49,7 +49,7 @@ public class Record {
     //endregion
 
     //region methods
-    public void saveRun(int arraySize, int bestTime, int optimalThread, float speedUp){
+    public void saveRun(int arraySize, float bestTime, int optimalThread, float speedUp){
         this.arraySize = arraySize;
         this.bestTime = bestTime;
         this.optimalThread = optimalThread;

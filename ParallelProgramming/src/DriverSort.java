@@ -24,13 +24,13 @@ public class DriverSort{
             System.out.println("comparing mergeSort...");
             for (int i = arrayMin; i < arrayMax; i+=arrayInc) {
                 int [] arr = new int[i];
+                Record record = new Record();
                 for (int j = 0; j < arr.length; j++) {
-                    arr[j] = rand.nextInt(1000);
+                    arr[j] = rand.nextInt(i);
                 }
                 while (threads< 65){
                     //will sort the array with threads of sizes 2,4,8,16,32,64
                     //will only write to output with best speed up time
-                    Record record = new Record();
                     int[] arrCopy = arr.clone();//keep the array unsorted to benchmark sequential search
 
                     MergesortParallel merge = new MergesortParallel(arr, threads);//merge object array is set to arr
@@ -53,6 +53,9 @@ public class DriverSort{
                     }
                     threads*=2;
                 }
+                //reset threads and write results for this array size
+                threads=2;
+                record.addRecords(outfile);
             }
         }
 
