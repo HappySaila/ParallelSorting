@@ -14,6 +14,7 @@ public class TestMergesortParallel{
     @Test
     public void testMergeEven(){
         //test if two arrays Merge successfully into a resulting array with even numbered elements
+        System.out.println("Testing merge with even elements");
         int[] sorted = {0,1,2,3,4,5,6,7,8,9};
         int[] right = {2,4,5,8,9};
         int[] left = {0,1,3,6,7};
@@ -29,6 +30,7 @@ public class TestMergesortParallel{
     @Test
     public void testMergeOdd(){
         //test if two arrays Merge successfully into a resulting array with odd numbered elements
+        System.out.println("Testing with odd elements");
         int[] sorted = {0,1,2,3,4,5,6,7,8};
         int[] right = {2,4,5,8};
         int[] left = {0,1,3,6,7};
@@ -44,6 +46,7 @@ public class TestMergesortParallel{
     @Test
     public void testMergeSeq(){
         //test if the mergesort works sequentially
+        System.out.println("Testing merge sort sequentially");
         int[] sorted = {1,2,3,4,5,6,7,8,9};
         int[] unsorted = {8,2,4,6,5,7,1,3,9};
         MergesortParallel main = new MergesortParallel();
@@ -59,6 +62,7 @@ public class TestMergesortParallel{
     @Test
     public void testMergeParallel() throws InterruptedException{
         //test if the mergesort works in parallel
+        System.out.println("Testing mergesort in parallel");
         int[] sorted = {1,2,3,4,5,6,7,8,9};
         int[] unsorted = {8,2,4,6,5,7,1,3,9};
         MergesortParallel main = new MergesortParallel();
@@ -75,6 +79,7 @@ public class TestMergesortParallel{
     public void testSpeed(){
         //test sequencial time versus parallel time.
         //AssertTrue if parallel method is faster than sequential method.
+        System.out.println("Testing if the mergesort method is faster in parallel");
     }
     //endregion
 

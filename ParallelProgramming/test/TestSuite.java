@@ -9,7 +9,7 @@ import org.junit.runners.Suite;
  */
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-        TestMergesortParallel.class// , TestQuicksortParallel.class/*, <next class>, <next class>, ... */
+        TestMergesortParallel.class , TestQuicksortParallel.class/*, <next class>, <next class>, ... */
 })
 
 public class TestSuite { /* Holder for above annotations. */}
