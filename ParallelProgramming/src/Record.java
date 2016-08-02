@@ -10,7 +10,7 @@ public class Record {
     private int optimalThread;
     private float bestTime;
     private float speedUp;
-    private formatter x;
+    private Formatter x;
     //endregion
 
     //region constructors
@@ -30,7 +30,7 @@ public class Record {
         return arraySize;
     }
 
-    public int getBestTime() {
+    public float getBestTime() {
         return bestTime;
     }
 
@@ -42,7 +42,7 @@ public class Record {
         return speedUp;
     }
 
-    public formatter getX() {
+    public Formatter getX() {
         return x;
     }
 
