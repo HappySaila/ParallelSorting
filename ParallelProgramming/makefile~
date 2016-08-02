@@ -26,7 +26,7 @@ vpath %.class $(BINDIR)
 
 #default rule - will be invoked by make
 
-all: MergesortParallel.class QuicksortParallel.class DriverSort.class Record.class\
+all: MergesortParallel.class QuicksortParallel.class  Record.class DriverSort.class\
 
 # Rules for generating documentation
 doc:

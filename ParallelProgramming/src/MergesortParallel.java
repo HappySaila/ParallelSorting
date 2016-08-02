@@ -5,9 +5,6 @@ public class MergesortParallel extends java.lang.Thread{
     private int[] left;
     private int[] right;
     private int[] arr;
-
-
-
     private int sequencialCutoff=2;
     //endregion
 
