@@ -1,8 +1,9 @@
 /**
  * Created by wlsgra012 on 2016/08/01.
  */
-import java.io.FileNotFoundException;
-import java.util.Formatter;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 public class Record {
 
     //region instantiate
@@ -10,7 +11,6 @@ public class Record {
     private int optimalThread;
     private float bestTime;
     private float speedUp;
-    private Formatter x;
     //endregion
 
     //region constructors
@@ -41,11 +41,6 @@ public class Record {
     public float getSpeedUp() {
         return speedUp;
     }
-
-    public Formatter getX() {
-        return x;
-    }
-
     //endregion
 
     //region methods
@@ -55,23 +50,32 @@ public class Record {
         this.optimalThread = optimalThread;
         this.speedUp = speedUp;
     }
-
-    public void addRecords(String outFile){
-        openFile(outFile);
-        //write to the file
-        x.format("%s%s%s%s",arraySize+"",optimalThread+"",bestTime+"",speedUp+"");
-        closeFile();
+    public String getResults(){
+        return "ArraySize: <"+arraySize+"> || "+"Best Time: <"+bestTime+"> || "+"OptimalThread: <"+optimalThread+"> || "+"SpeedUp: <"+speedUp+">";
     }
-    private void openFile(String fileName){
+
+    //endregion
+    public void write(String outFile, String output){
         try {
-            x = new Formatter(fileName);
-        } catch (FileNotFoundException e) {
-            System.out.println(e.getLocalizedMessage());
+
+            String content = output;
+
+            File file = new File(outFile);
+
+            // if file doesnt exists, then create it
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+
+            FileWriter fw = new FileWriter(file.getAbsoluteFile());
+            BufferedWriter bw = new BufferedWriter(fw);
+            bw.write(content);
+            bw.close();
+
+            System.out.println("Done");
+
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
-    private void closeFile(){
-        x.close();
-    }
-    //endregion
-
 }

@@ -26,14 +26,14 @@ vpath %.class $(BINDIR)
 
 #default rule - will be invoked by make
 
-all: MergesortParallel.class QuicksortParallel.class  Record.class DriverSort.class\
+all: ParallelMergesort.class QuicksortParallel.class Record.class DriverSort.class\
 
 # Rules for generating documentation
 doc:
 	javadoc -d $(DOCDIR) $(SRCDIR)/*.java $(TESTDIR)/*.java
 
 # Rules for unit testing
-test_classes: all TestMergesortParallel.class TestQuicksortParallel.class TestSuite.class
+test_classes: all TestParallelMergesort.class TestParallelQuicksort.class TestSuite.class
 
 test: test_classes
 	java -cp $(BINDIR):$(JUNIT) org.junit.runner.JUnitCore TestSuite
@@ -51,11 +51,11 @@ clean:
 	@rm -Rf coveragereport
 	@rm -Rf doc
 	@echo "all is clean-"
-run: clean all
+run: all
 	#java -cp $(BINDIR) DriverSort sortType arrayMin arrayMax arrayInc outName
-	java -cp $(BINDIR) DriverSort merge 100 1000 100 results
-quick: clean all
+	java -cp $(BINDIR) DriverSort merge 100000 1000000 10000 results
+quick:  all
 	#java -cp $(BINDIR) DriverSort sortType arrayMin arrayMax arrayInc outName
-	java -cp $(BINDIR) DriverSort merge 100 1000 100 results
+	java -cp $(BINDIR) DriverSort quick 100000 1000000 10000 results
 
 
