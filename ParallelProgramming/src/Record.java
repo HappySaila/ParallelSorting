@@ -51,7 +51,7 @@ public class Record {
         this.speedUp = speedUp;
     }
     public String getResults(){
-        return "ArraySize: <"+arraySize+"> || "+"Best Time: <"+bestTime+"> || "+"OptimalThread: <"+optimalThread+"> || "+"SpeedUp: <"+speedUp+">";
+        return arraySize+" "+bestTime+" "+optimalThread+" "+speedUp;
     }
 
     //endregion

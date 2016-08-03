@@ -27,19 +27,21 @@
         <entry file="file://$PROJECT_DIR$/src/Record.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="53" column="119" selection-start-line="53" selection-start-column="119" selection-end-line="53" selection-end-column="119" />
+              <caret line="53" column="67" selection-start-line="53" selection-start-column="67" selection-end-line="53" selection-end-column="67" />
               <folding>
                 <element signature="e#864#865#0" expanded="true" />
                 <element signature="e#894#895#0" expanded="true" />
+                <element signature="e#1206#1207#0" expanded="true" />
+                <element signature="e#1281#1282#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParallelMergesort.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ParallelMergesort.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ParallelMergesort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-26.35484">
+            <state vertical-scroll-proportion="0.7862233">
               <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -52,7 +54,7 @@
       <file leaf-file-name="DriverSort.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DriverSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.409836">
+            <state vertical-scroll-proportion="4.0655737">
               <caret line="98" column="121" selection-start-line="98" selection-start-column="121" selection-end-line="98" selection-end-column="121" />
               <folding>
                 <element signature="e#0#6469#0" expanded="true" />
@@ -62,10 +64,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuicksortParallel.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QuicksortParallel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/QuicksortParallel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6905371">
+            <state vertical-scroll-proportion="-4.4262295">
               <caret line="42" column="51" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -117,12 +119,12 @@
         <option value="$PROJECT_DIR$/src/TestParallelMergesort.java" />
         <option value="$PROJECT_DIR$/test/TestParallelMergesort.java" />
         <option value="$PROJECT_DIR$/src/ParallelMergesort.java" />
-        <option value="$PROJECT_DIR$/src/Record.java" />
         <option value="$PROJECT_DIR$/test/TestQuicksortParallel.java" />
         <option value="$PROJECT_DIR$/src/ParallelQuicksort.java" />
         <option value="$PROJECT_DIR$/test/TestParallelQuicksort.java" />
         <option value="$PROJECT_DIR$/src/DriverSort.java" />
         <option value="$PROJECT_DIR$/src/QuicksortParallel.java" />
+        <option value="$PROJECT_DIR$/src/Record.java" />
       </list>
     </option>
   </component>
@@ -512,12 +514,12 @@
       <option name="number" value="Default" />
       <updated>1470216358940</updated>
       <workItem from="1470216361836" duration="6164000" />
-      <workItem from="1470223353331" duration="7721000" />
+      <workItem from="1470223353331" duration="9514000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13885000" />
+    <option name="totallyTimeSpent" value="15678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1535" height="904" extended-state="6" />
@@ -596,6 +598,8 @@
           <folding>
             <element signature="e#864#865#0" expanded="true" />
             <element signature="e#894#895#0" expanded="true" />
+            <element signature="e#1206#1207#0" expanded="true" />
+            <element signature="e#1281#1282#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -638,28 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Record.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="119" selection-start-line="53" selection-start-column="119" selection-end-line="53" selection-end-column="119" />
-          <folding>
-            <element signature="e#864#865#0" expanded="true" />
-            <element signature="e#894#895#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ParallelMergesort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-26.35484">
-          <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/TestParallelMergesort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -678,9 +660,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuicksortParallel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.4262295">
+          <caret line="42" column="51" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/DriverSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.409836">
+        <state vertical-scroll-proportion="4.0655737">
           <caret line="98" column="121" selection-start-line="98" selection-start-column="121" selection-end-line="98" selection-end-column="121" />
           <folding>
             <element signature="e#0#6469#0" expanded="true" />
@@ -689,11 +681,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/QuicksortParallel.java">
+    <entry file="file://$PROJECT_DIR$/src/Record.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6905371">
-          <caret line="42" column="51" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="67" selection-start-line="53" selection-start-column="67" selection-end-line="53" selection-end-column="67" />
           <folding>
+            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#894#895#0" expanded="true" />
+            <element signature="e#1206#1207#0" expanded="true" />
+            <element signature="e#1281#1282#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ParallelMergesort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7862233">
+          <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
