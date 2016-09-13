@@ -6,14 +6,14 @@ import java.util.Random;
 import java.text.DecimalFormat;
 public class DriverSort{
 //    region main
-    public static void main(String[] args){
+    public static void main(String[] ar){
 //        region debug args
-//        String[] args = new String[5];
-//        args[0] = "merge";
-//        args[1] = "100";
-//        args[2] = "1000";
-//        args[3] = "100";
-//        args[4] = "results.txt";
+        String[] args = new String[5];
+        args[0] = "merge";
+        args[1] = "100";
+        args[2] = "1000";
+        args[3] = "100";
+        args[4] = "results.txt";
 //        endregion
         String sortType = args[0];
         int arrayMin = Integer.parseInt(args[1]);
